@@ -114,8 +114,25 @@
                 this.photoswipe.init()
             },
 
+            // Close gallery
             close () {
                 this.photoswipe.close()
+            },
+
+            // Go to slide by index
+            // @param {int} `index`
+            goTo ( index ) {
+                this.photoswipe.goTo( index )
+            },
+
+            // Go to the next slide
+            next () {
+                this.photoswipe.next()
+            },
+
+            // Go to the previous slide
+            prev () {
+                this.photoswipe.prev()
             },
 
             init () {
