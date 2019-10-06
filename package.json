@@ -1,7 +1,7 @@
 {
-  "name": "vue-photoswipe",
-  "version": "1.0.3",
-  "description": "PhotoSwipe plugin for Vue.js 2.0",
+  "name": "vue-admire-photoswipe",
+  "version": "1.0.0",
+  "description": "PhotoSwipe plugin for Vue.js & Nuxt",
   "main": "./src/index.js",
   "scripts": {
     "build": "webpack",
@@ -10,18 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ymyang/vue-photoswipe.git"
+    "url": "git+https://github.com/CHEWX/vue-photoswipe.git"
   },
   "keywords": [
     "PhotoSwipe",
-    "Vue"
+    "Vue",
+    "Nuxt"
   ],
-  "author": "ymyang",
+  "author": "CHEWX",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ymyang/vue-photoswipe/issues"
+    "url": "https://github.com/CHEWX/vue-photoswipe/issues"
   },
-  "homepage": "https://github.com/ymyang/vue-photoswipe#readme",
+  "homepage": "https://github.com/CHEWX/vue-photoswipe#readme",
   "dependencies": {
     "photoswipe": "^4.1.1"
   },
