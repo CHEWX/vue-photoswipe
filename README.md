@@ -3,7 +3,7 @@ PhotoSwipe demo built with vue
 
 ## Install
 
-`npm install --save vue-photoswipe`
+`npm install --save vue-admire-photoswipe`
 
 
 ## Use
