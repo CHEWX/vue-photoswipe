@@ -1,7 +1,9 @@
 <template>
     <div class="preview-img-list">
         <img class="preview-img-item" v-for="(item, index) in items"
-            :src="item.src" @click="$photoswipe.open(index, items)">
+            :src="item.src" @click="$refs.photoswipe.open(index, items)">
+
+        <PhotoSwipe ref="photoswipe" />
     </div>
 </template>
 
