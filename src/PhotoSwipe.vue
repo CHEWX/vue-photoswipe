@@ -74,6 +74,8 @@
     import PhotoSwipe from 'photoswipe/dist/photoswipe'
     import PhotoSwipeDefaultUI from 'photoswipe/dist/photoswipe-ui-default'
 
+    import events from './events.js'
+
     export default {
         methods: {
             open (index, items, options = {
@@ -101,6 +103,14 @@
                 }, options)
 
                 this.photoswipe = new PhotoSwipe(this.$el, PhotoSwipeDefaultUI, items, opts)
+
+                events.forEach(e => {
+                    this.photoswipe.listen(e, (...args) => {
+                        args.unshift(this)
+                        this.$emit(e, [...args])
+                    })
+                })
+
                 this.photoswipe.init()
             },
 

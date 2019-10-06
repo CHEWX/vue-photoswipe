@@ -3,7 +3,7 @@
         <img class="preview-img-item" v-for="(item, index) in items"
             :src="item.src" @click="$refs.photoswipe.open(index, items)">
 
-        <PhotoSwipe ref="photoswipe" />
+        <PhotoSwipe ref="photoswipe" @close="closeCallback()" />
     </div>
 </template>
 
@@ -57,6 +57,12 @@
                     w: 1024,
                     h: 768
                 }]
+            }
+        },
+
+        methods : {
+            closeCallback() {
+                console.log( 'Close Callback Here...' )
             }
         }
     }

@@ -1,6 +1,6 @@
 {
   "name": "vue-admire-photoswipe",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "PhotoSwipe plugin for Vue.js & Nuxt",
   "main": "./src/index.js",
   "scripts": {
