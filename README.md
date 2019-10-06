@@ -25,7 +25,7 @@ Create a file called `photoswipe.js` inside your Nuxt `plugins` folder. Should l
 
 ```
 import Vue from 'vue'
-import PhotoSwipeComponent from 'vue-photoswipe'
+import PhotoSwipeComponent from 'vue-admire-photoswipe'
 
 Vue.use( PhotoSwipeComponent )
 ```
